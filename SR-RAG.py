@@ -11,8 +11,8 @@ from langchain.schema.runnable import RunnableLambda, RunnablePassthrough
 from langchain.vectorstores import FAISS
 from langchain.document_loaders import PyMuPDFLoader
 
-os.environ["OPENAI_API_KEY"] = "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"
-os.environ["PC_API_KEY"] = "286f7f16-6ea7-4cd9-9e22-65419c03aca3"
+os.environ["OPENAI_API_KEY"] = "OPEN-API-KEY"
+os.environ["PC_API_KEY"] = "PC-API-KEY"
 embeddings = OpenAIEmbeddings(openai_api_key=os.environ['OPENAI_API_KEY']) 
 pinecone.init(
             api_key= os.environ['PC_API_KEY'], 
